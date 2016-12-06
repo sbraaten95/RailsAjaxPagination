@@ -1,0 +1,9 @@
+<form action="leads/filter" method='post'>
+<input type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'>
+Filter by first name: <input id="first_name" type="text" name="first_name">
+Filter by last name: <input id="last_name" type="text" name="last_name">
+Filter by date - After: <input id="before" type="date" name="before"> Before: <input id="after" type="date" name="after">
+</form>
+<div id="leads">
+<%= render 'leads' %>
+</div>

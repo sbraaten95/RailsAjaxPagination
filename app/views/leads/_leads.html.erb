@@ -1,0 +1,9 @@
+<%= will_paginate @leads %>
+
+<% for lead in @leads %>
+<p>
+	<%= lead.first_name %> <%= lead.last_name %> - Registered on <%= lead.registered_datetime %> - <%= lead.email %>
+</p>
+<% end %>
+
+<%= will_paginate @leads %>
